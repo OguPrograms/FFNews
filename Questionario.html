@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F* Fake News</title>
     <!--ejecutem els estils que estan a un fitxer a part-->
-    <link rel="stylesheet" href="StylesFFN.css">
-</head>
-<body>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;1,900&family=Sedgwick+Ave+Display&display=swap"
-      rel="stylesheet">
-<!--Aqui hem posat amb les fonts de google el titol del nostre diari-->
-<h3 style="font-family: 'Sedgwick Ave Display', cursive;">F* Fake News</h3>
-<h2>Danos tu opinión!!!!</h2>
-<!-- Creem la taula -->
-<table>
-    <tr>
-        <form>
-        <th>
-            <label for="FormName">Nombre:</label> <br>
-            <input type="text" id="FormName">
-        </th>
-        <th>
-            <label for="FormEmail">Correu:</label> <br>
-            <input type="email" id="FormEmail">
-        </th>
-        <th>
-            <lable for="FormAge">Edat:</lable> <br>
-            <input type="number" id="FormAge" min="7" max="99">
-        </th>
-    </tr>
-</form>
-</table>
-<table>
-    <tr>
-        <td>
-            <input type="radio" id="FormHombre" name="gender">
-            <label for="FormHombre"> Homebre </label><br>
-            <input type="radio" id="FormMujer" name="gender">
-            <label for="FormMujer"> Mujer</label><br>
-            <input type="radio" id="FormOtro" name="gender">
-            <label for="FormOtro"> Otro</label><br>
-        </td>
-        <th>
-            <input type="checkbox" id="FormDatos" name="datos">
-            <label for="FormHombre"> Soy lector abitual </label><br>
-            <input type="checkbox" id="FormDatos" name="datos">
-            <label for="FormMujer"> Soy aluno del ITIC</label><br>
-            <input type="checkbox" id="FormDatos" name="datos">
-            <label for="FormOtro"> Soy terrorista</label><br>
-        </th>
-    </tr>
-</form>
-</table>
-<table>
-    <tr>
-        <td>
-
-        </th>
-    </tr>
-</form>
-</table>
-<br>
-<button class="button" onclick="location.href='404.html'">Enviar</button>
-<p><a href="fNews.html">Inicio</a></p>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;1,900&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="StylesFFN.css" />
+  </head>
+  <body>
+    <!--Aqui hem posat amb les fonts de google el titol del nostre diari-->
+    <h3 style="font-family: 'Sedgwick Ave Display', cursive">F* Fake News</h3>
+    <h2>Danos tu opinión!!!!</h2>
+    <form action="404.html">
+      <!-- Creem la taula -->
+      <table>
+        <tr>
+          <th>
+            <form>
+              <label for="FormName">Nombre:</label> <br />
+              <input type="text" id="FormName" name="" required />
+            </form>
+          </th>
+          <th>
+            <label for="FormEmail">Correu:</label> <br />
+            <input type="email" id="FormEmail" required />
+          </th>
+          <th>
+            <label for="FormAge">Edat:</label> <br />
+            <input type="number" id="FormAge" min="7" max="99" required />
+          </th>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <input type="radio" id="FormHombre" name="gender" checked />
+            <label for="FormHombre"> Hombre </label><br />
+            <input type="radio" id="FormMujer" name="gender" />
+            <label for="FormMujer"> Mujer</label><br />
+            <input type="radio" id="FormOtro" name="gender" />
+            <label for="FormOtro"> Otro</label><br />
+          </td>
+          <th>
+            <input type="checkbox" id="FormDatos" name="datos" />
+            <label for="FormHombre"> Soy lector habitual </label><br />
+            <input type="checkbox" id="FormDatos" name="datos" />
+            <label for="FormMujer"> Soy alumno del ITIC</label><br />
+            <input type="checkbox" id="FormDatos" name="datos" />
+            <label for="FormOtro"> Soy terrorista</label><br />
+          </th>
+        </tr>
+      </table>
+      <br />
+      <center><button class="button" onclick="location.href='404.html'">Enviar</button>
+      <p><a href="fNews.html">Inicio</a></p>
+    </form>
+  </body>
 </html>
