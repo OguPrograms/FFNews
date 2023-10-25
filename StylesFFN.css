@@ -1,0 +1,51 @@
+    /*Cambiem el color de fons*/
+    body {background-color:rgb(235, 245, 251);}
+    /*Configuració, del "logotip" de la marca del diari*/
+    .logo{
+      text-align:center;
+      border: 2px solid;
+      background-color:rgba(26, 82, 118, 0.5);
+      
+    }
+    /*Subratllar els titols h2*/
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align:center;
+    }
+    h2{
+      text-align:center;
+      background-color:rgba(169, 204, 227, 0.8);
+      font-family: 'Courier New', Courier, monospace;
+    }
+    p{
+        font-size:arial;
+    }
+    /*cambiem l'estil de les taules*/
+    table, th, td {
+        border: 10px solid rgb(235, 245, 251);
+        background-color: rgba(169, 204, 227, 0.8);
+        border-collapse: collapse;
+        border-radius: 7px;
+        }
+    /*cambiem l'estetica dels botons*/
+    .button {
+        padding: 7px 13px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #244c6d;
+        border: none;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 7px;
+        box-shadow: 0 4px #999;
+      }
+
+      .button:hover {background-color: #244c6d}
+
+      .button:active {
+        background-color: #3a6074;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+      }
