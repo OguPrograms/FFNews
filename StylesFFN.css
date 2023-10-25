@@ -33,6 +33,7 @@ td {
   margin-right: auto;
 }
 /*cambiem l'estetica dels botons*/
+.submit,
 .button {
   padding: 7px 13px;
   font-size: 15px;
@@ -47,10 +48,12 @@ td {
   box-shadow: 0 4px #999;
 }
 
+.submit:hover,
 .button:hover {
   background-color: #10273a;
 }
 
+.submit:active,
 .button:active {
   background-color: #3a6074;
   box-shadow: 0 2px #666;
