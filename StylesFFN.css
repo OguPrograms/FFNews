@@ -9,13 +9,13 @@
     }
     /*Subratllar els titols h2*/
     h1{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Impact;
         text-align:center;
     }
     h2{
       text-align:center;
       background-color:rgba(169, 204, 227, 0.8);
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Courier New';
     }
     p{
         font-size:arial;
@@ -26,9 +26,12 @@
         background-color: rgba(169, 204, 227, 0.8);
         border-collapse: collapse;
         border-radius: 7px;
-        }
+        margin-left: auto;
+        margin-right: auto;
+      }
     /*cambiem l'estetica dels botons*/
     .button {
+        
         padding: 7px 13px;
         font-size: 15px;
         text-align: center;
