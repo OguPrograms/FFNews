@@ -18,16 +18,20 @@
     <form action="404.html">
       <!-- Creem la taula -->
       <table>
-        <tr>
-          <th>
+        <tr style="text-align: center">
+          <!--Cambiamos el estilo inline porque solo necesitamos que este centrado en dos casos, si no se distorsionaria la tabla que usa el mismo css.-->
+          <td>
+            <!--Incluim un text curt-->
             <label for="FormName">Nombre:</label> <br />
             <input class="input1" type="text" id="FormName" required />
-          </th>
-          <th>
-            <label for="FormEmail">Correu:</label> <br />
+          </td>
+          <td>
+            <!--Incluim un espai per posar el mail, si no porta @ ni un . no t'ho seixa enviar.-->
+            <label for="FormEmail">Correo:</label> <br />
             <input class="input1" type="email" id="FormEmail" required />
-          </th>
-          <th>
+          </td>
+          <td>
+            <!--Un espai per posar l'esdat, que han de tenir com a minim 7 anys-->
             <label for="FormAge">Edat:</label> <br />
             <input
               class="input1"
@@ -37,13 +41,14 @@
               max="99"
               required
             />
-          </th>
+          </td>
         </tr>
       </table>
       <br />
       <table>
         <tr>
           <td>
+            <!--Aixó és un radio buttons-->
             <input type="radio" id="FormHombre" name="gender" checked />
             <label for="FormHombre"> Hombre </label><br />
             <input type="radio" id="FormMujer" name="gender" />
@@ -52,6 +57,7 @@
             <label for="FormOtro"> Otro</label><br />
           </td>
           <td>
+            <!--Aixço és un chekbox-->
             <input checked type="checkbox" id="FormLector" name="datos" />
             <label for="FormLector"> Soy lector habitual </label><br />
             <input type="checkbox" id="FormAlumno" name="datos" />
@@ -62,19 +68,25 @@
         </tr>
       </table>
       <br />
-      <center>
-        <legend>Me dijo eres un crack, y yo le dije:</legend>
-        <select>
-          <option>1 piquito</option>
-          <option>2 piquitos</option>
-          <option>3 piquitos</option>
-          <option>4 piquitos</option>
-        </select>
-      </center>
+      <table>
+        <td style="text-align: center">
+          <!--Aixó és un desplegable amb 6 opcions-->
+          <legend>Descripción comentario:</legend>
+          <select>
+            <option>He encontrado un error</option>
+            <option>Hay un error ortografico</option>
+            <option>La pagina no carga</option>
+            <option>Quiero añadir una noticia</option>
+            <option>Reclamación</option>
+            <option>Otros</option>
+          </select>
+        </td>
+      </table>
       <br />
       <div>
         <table>
-          <th>
+          <td style="text-align: center">
+            <!--Aixó és un text llarg-->
             <legend for="Escribir">Deja tu comentario:</legend>
             <textarea
               class="input1"
@@ -84,11 +96,12 @@
               placeholder="He encontrado un error en la página..."
               required
             ></textarea>
-          </th>
+          </td>
         </table>
       </div>
       <br />
       <center>
+        <!--El boto es tipo submit per poder posar els camps com obligatoris-->
         <button class="submit">Enviar</button>
         <p><a href="fNews.html">Inicio</a></p>
       </center>

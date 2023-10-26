@@ -31,8 +31,9 @@ td {
   border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Courier New";
 }
-/*cambiem l'estetica dels botons*/
+/*cambiem l'estetica dels botons y dels submits*/
 .submit,
 .button {
   padding: 7px 13px;
