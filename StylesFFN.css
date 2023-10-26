@@ -63,3 +63,8 @@ td {
 #FormAge {
   width: 100px;
 }
+
+.input1:focus {
+  background-color: rgb(108, 80, 236);
+  color: #e8f4ff;
+}

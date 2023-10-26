@@ -20,18 +20,23 @@
       <table>
         <tr>
           <th>
-            <form>
-              <label for="FormName">Nombre:</label> <br />
-              <input type="text" id="FormName" required />
-            </form>
+            <label for="FormName">Nombre:</label> <br />
+            <input class="input1" type="text" id="FormName" required />
           </th>
           <th>
             <label for="FormEmail">Correu:</label> <br />
-            <input type="email" id="FormEmail" required />
+            <input class="input1" type="email" id="FormEmail" required />
           </th>
           <th>
             <label for="FormAge">Edat:</label> <br />
-            <input type="number" id="FormAge" min="7" max="99" required />
+            <input
+              class="input1"
+              type="number"
+              id="FormAge"
+              min="7"
+              max="99"
+              required
+            />
           </th>
         </tr>
       </table>
@@ -47,18 +52,42 @@
             <label for="FormOtro"> Otro</label><br />
           </td>
           <td>
-            <input type="checkbox" id="FormDatos" name="datos" />
-            <label for="FormHombre"> Soy lector habitual </label><br />
-            <input type="checkbox" id="FormDatos" name="datos" />
-            <label for="FormMujer"> Soy alumno del ITIC</label><br />
-            <input type="checkbox" id="FormDatos" name="datos" />
-            <label for="FormOtro"> Soy terrorista</label><br />
+            <input checked type="checkbox" id="FormLector" name="datos" />
+            <label for="FormLector"> Soy lector habitual </label><br />
+            <input type="checkbox" id="FormAlumno" name="datos" />
+            <label for="FormAlumno"> Soy alumno del ITIC</label><br />
+            <input type="checkbox" id="FormTerrorista" name="datos" />
+            <label for="FormTerrorista"> Soy terrorista</label><br />
           </td>
         </tr>
       </table>
       <br />
+      <center>
+        <legend>Me dijo eres un crack, y yo le dije:</legend>
+        <select>
+          <option>1 piquito</option>
+          <option>2 piquitos</option>
+          <option>3 piquitos</option>
+          <option>4 piquitos</option>
+        </select>
+      </center>
       <br />
-      <textarea placeholder="addsdad"> </textarea>
+      <div>
+        <table>
+          <th>
+            <legend for="Escribir">Deja tu comentario:</legend>
+            <textarea
+              class="input1"
+              id="Escribir"
+              rows="4"
+              cols="40"
+              placeholder="He encontrado un error en la página..."
+              required
+            ></textarea>
+          </th>
+        </table>
+      </div>
+      <br />
       <center>
         <button class="submit">Enviar</button>
         <p><a href="fNews.html">Inicio</a></p>
